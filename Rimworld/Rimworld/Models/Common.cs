@@ -11,7 +11,7 @@ namespace Rimworld.Models
 {
     public class Common
     {
-        private static ObjectCache cache = MemoryCache.Default;
+        public static ObjectCache cache = MemoryCache.Default;
         public static string[] getFilesSave()
         {
             string[] filesSave = new string[0];
@@ -67,9 +67,9 @@ namespace Rimworld.Models
                 {
                     li.FirstChild.Value = "1000";
                 }
-                
-                Common.loadFile(filePath);
-                xmlDoc.Save(filePath);
+
+
+                Common.saveFile(xmlDoc);
                 return true;
 
             }catch(Exception ex)
@@ -156,6 +156,49 @@ namespace Rimworld.Models
         {
             string value = node.SelectSingleNode(nodeName).FirstChild.Value;
             return value;
+        }
+
+        public static string exportXmlDocToString(XmlDocument xmlDoc)
+        {
+            using (var stringWriter = new StringWriter())
+            using (var xmlTextWriter = XmlWriter.Create(stringWriter))
+            {
+                xmlDoc.WriteTo(xmlTextWriter);
+                xmlTextWriter.Flush();
+                return stringWriter.GetStringBuilder().ToString();
+            }
+        }
+
+        public static void saveFile(XmlDocument xmlDoc)
+        {
+            string filePath = Common.cache["filecontentsPath"] as string;
+
+            string fileContents = Common.exportXmlDocToString(xmlDoc);
+            Common.writeCache("filecontents", fileContents);
+
+            xmlDoc.Save(filePath);
+            Common.loadFile(filePath);
+        }
+
+        public static void showForm(Form showForm, string FormName)
+        {
+            if (showForm.Name == FormName) return;
+            foreach (Form f in Application.OpenForms) f.Hide();           
+            showForm.Show();
+        }
+
+        public static void addButtonToDataGirdView(DataGridView dgv, string btnName, string btnText)
+        {
+            DataGridViewColumn col = dgv.Columns[btnName];
+            if (col != null) return;
+
+            var btn = new DataGridViewButtonColumn();
+            btn.Name = btnName;
+            btn.HeaderText = btnText;
+            btn.Text = btnText;
+            btn.UseColumnTextForButtonValue = true;
+            dgv.Columns.Add(btn);
+
         }
     }
 }

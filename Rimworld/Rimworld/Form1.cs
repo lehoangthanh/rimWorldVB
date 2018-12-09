@@ -19,7 +19,18 @@ namespace Rimworld
                 this.dashboarPrensters = new DashboarPrensters(this);
             }
             cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();
-        }      
+        }
+
+        private void reload_Click(object sender, EventArgs e)
+        {
+            Common.showMessage(lbl_result_process, "Reload Đang xử lý...");
+            if (this.dashboarPrensters is null)
+            {
+                this.dashboarPrensters = new DashboarPrensters(this);
+            }
+            cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();
+            Common.showMessage(lbl_result_process, "Reload Thành Công...",2);
+        }
 
         public string listFilesSave
         {
@@ -41,9 +52,37 @@ namespace Rimworld
             
             Common.loadFile(filePath);
                      
-            People.showDataGirdView(dgv_ListPeople);
+            People.showDataGirdView(dgv_ListPeople);                        
+            // Add a CellClick handler to handle clicks in the button column.
+            dgv_ListPeople.CellClick += new DataGridViewCellEventHandler(dgv_ListPeople_CellClick);
+
             Common.showMessage(lbl_result_process, "Load File Thành Công...", 2);
 
+        }
+
+        void dgv_ListPeople_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            DataGridViewRow row = (DataGridViewRow)dgv_ListPeople.Rows[e.RowIndex];
+            string cellType = row.Cells[e.ColumnIndex].GetType().ToString();
+            if(cellType != "System.Windows.Forms.DataGridViewButtonCell") return;
+            Common.showMessage(lbl_result_process, "Đang xử lý...");
+
+            DataGridViewButtonCell btnCell = (DataGridViewButtonCell)row.Cells[e.ColumnIndex];
+            btnCell.ReadOnly = true;
+            string id = "";           
+            string btnAction = btnCell.Value.ToString().ToLower();            
+            switch (btnAction){
+                case "delete":
+                    {
+                        id = People.delete(row, dgv_ListPeople);
+                        break;
+                    }
+            }
+                       
+            Common.showMessage(lbl_result_process, btnAction + " Thành Công...", 5);
+          
+            
         }
 
         private void button_upSkill(object sender, EventArgs e)
@@ -63,6 +102,16 @@ namespace Rimworld
             e.Graphics.FillRectangle(Brushes.Red, e.Bounds);
             e.ForeColor.Equals(Common.genColor());
             e.DrawText();
+        }
+
+        private void btn_Stockpie_Click(object sender, EventArgs e)
+        {            
+            Common.showForm(new StockPieForm(), this.FindForm().Name);
+        }
+
+        private void btn_People_Click(object sender, EventArgs e)
+        {
+            Common.showForm(new Form1(), this.FindForm().Name);
         }
     }
 }

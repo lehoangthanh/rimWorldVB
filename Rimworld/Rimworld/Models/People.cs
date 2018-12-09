@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using System.Runtime.Caching;
 using System.Xml;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Rimworld.Models
 {
     public class People
     {
-        private static ObjectCache cache = MemoryCache.Default;
+        //private static ObjectCache cache = MemoryCache.Default;
 
         private string _id, _firstName, _lastName, _fullName, _nick, _kindDef;
 
@@ -58,7 +59,7 @@ namespace Rimworld.Models
 
         public static List<People> getListPeople()
         {
-            string fileContents = People.cache["filecontents"] as string;
+            string fileContents = Common.cache["filecontents"] as string;
             //thing
             List<People> listPeople = new List<People>();
             XmlDocument xmlDoc = new XmlDocument();
@@ -96,6 +97,11 @@ namespace Rimworld.Models
                 
         }
 
+        internal static void showDataGirdView(object dgv_ListPeople)
+        {
+            throw new NotImplementedException();
+        }
+
         public static ListView getListPeopleForListView(List<People> listPeople)
         {
             ListView lvPeople = new ListView();
@@ -118,12 +124,70 @@ namespace Rimworld.Models
         }
 
         public static void showDataGirdView(DataGridView dgv_ListPeople)
-        {
-            dgv_ListPeople.Rows.Clear();
+        {            
+            dgv_ListPeople.Rows.Clear();            
             List<People> listPeople = People.getListPeople();
-            listPeople.ForEach(p => dgv_ListPeople.Rows.Add(new string[]{ p.id, p.fullname, p.nick, p.kindDef }));     
+            listPeople.ForEach(p => dgv_ListPeople.Rows.Add(new string[]{ p.id, p.fullname, p.nick, p.kindDef }));
+            People.addButtonToDataGirdView(dgv_ListPeople, "btn_delete", "Delete");
         }
 
-        
+        public static void addButtonToDataGirdView(DataGridView dgv_ListPeople, string btnName, string btnText)
+        {
+            DataGridViewColumn col = dgv_ListPeople.Columns[btnName];
+            if (col != null) return;
+
+            var btn = new DataGridViewButtonColumn();
+            btn.Name = btnName;
+            btn.HeaderText = btnText;
+            btn.Text = btnText;
+            btn.UseColumnTextForButtonValue = true;
+            dgv_ListPeople.Columns.Add(btn);
+
+        }
+
+
+        public static string delete(DataGridViewRow row, DataGridView dgv_ListPeople)
+        {
+            
+            DataGridViewCell idCell = (DataGridViewCell)row.Cells["id"];
+            string id = idCell.Value.ToString();
+
+            
+            string fileContents = Common.cache["filecontents"] as string;
+            //thing
+            List<People> listPeople = new List<People>();
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml(fileContents);
+            XmlElement root = xmlDoc.DocumentElement;
+            XmlNodeList nodes = root.SelectNodes("//savegame/game");
+
+            XmlNodeList thingsNode = nodes[0].SelectNodes("maps/li/things/thing[@Class='Pawn']");
+         
+            foreach (XmlNode thingNode in thingsNode)
+            {
+                People people = new People();
+
+
+                string def = Common.getValueFromNode(thingNode, "def");
+                if (def != "Human") continue;
+
+                string idHuman = Common.getValueFromNode(thingNode, "id");
+                if(idHuman == id)
+                {
+                    thingNode.ParentNode.RemoveChild(thingNode);
+                }             
+            }
+
+
+            Common.saveFile(xmlDoc);
+            People.showDataGirdView(dgv_ListPeople);
+            dgv_ListPeople.Refresh();
+
+            return id;
+
+
+        }
+
+
     }
 }

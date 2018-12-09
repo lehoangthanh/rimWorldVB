@@ -53,11 +53,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemInStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInStockForm.Designer.cs">
+      <DependentUpon>ItemInStockForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Common.cs" />
     <Compile Include="Models\People.cs" />
+    <Compile Include="Models\StockPie.cs" />
     <Compile Include="Presenters\DashboarPrensters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockPieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockPieForm.Designer.cs">
+      <DependentUpon>StockPieForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\IDashBoard.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -71,6 +84,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StockPieForm.resx">
+      <DependentUpon>StockPieForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
