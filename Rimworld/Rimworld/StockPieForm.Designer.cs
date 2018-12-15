@@ -131,7 +131,6 @@
             this.dgv_ListStockePie.ReadOnly = true;
             this.dgv_ListStockePie.Size = new System.Drawing.Size(793, 311);
             this.dgv_ListStockePie.TabIndex = 8;
-            this.dgv_ListStockePie.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListStockePie_CellContentClick);
             // 
             // name
             // 

@@ -113,5 +113,10 @@ namespace Rimworld
         {
             Common.showForm(new Form1(), this.FindForm().Name);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace Rimworld
             }
             StockPie.showDataGirdView(dgv_ListStockePie);
             dgv_ListStockePie.CellClick += new DataGridViewCellEventHandler(dgv_ListStockePie_CellContentClick);
-            cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();
+
         }
 
         private void btn_Stockpie_Click(object sender, EventArgs e)
@@ -63,26 +63,27 @@ namespace Rimworld
                 this.dashboarPrensters = new DashboarPrensters(this);
             }
             cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();
+            StockPie.showDataGirdView(dgv_ListStockePie);
+            dgv_ListStockePie.CellClick += new DataGridViewCellEventHandler(dgv_ListStockePie_CellContentClick);
+
             Common.showMessage(lbl_result_process, "Reload Thành Công...", 2);
         }
 
-        private void dgv_ListStockePie_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        void dgv_ListStockePie_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = (DataGridViewRow)dgv_ListStockePie.Rows[e.RowIndex];
             string cellType = row.Cells[e.ColumnIndex].GetType().ToString();
             if (cellType != "System.Windows.Forms.DataGridViewButtonCell") return;
-
-            this.IsMdiContainer = true;
-            ItemInStockForm ItemInStockForm = new ItemInStockForm();
-            //ItemInStockForm.MdiParent = this;
-
-
+            ItemInStockForm form =new ItemInStockForm();
             
-            ItemInStockForm.Show();
+            bool showForm = Application.OpenForms.Cast<Form>().Any(f => (f.Name == form.Name));
+            if (!showForm)
+            {
+                //Common.writeCache('')
+                form.Show();
+            }
 
-            
 
-            
             //Common.showMessage(lbl_result_process, "Đang xử lý...");
 
             //DataGridViewButtonCell btnCell = (DataGridViewButtonCell)row.Cells[e.ColumnIndex];

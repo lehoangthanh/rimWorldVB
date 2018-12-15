@@ -16,5 +16,10 @@ namespace Rimworld
         {
             InitializeComponent();
         }
+
+        private void ItemInStockForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

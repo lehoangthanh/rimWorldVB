@@ -197,6 +197,7 @@
             this.Controls.Add(this.lbl_result_process);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel_people.ResumeLayout(false);
             this.panel_people.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListPeople)).EndInit();
