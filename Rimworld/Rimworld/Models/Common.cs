@@ -55,8 +55,8 @@ namespace Rimworld.Models
         {
             try
             {
-                string filePath = Common.cache["filecontentsPath"] as string;
-                string fileContents = Common.cache["filecontents"] as string;
+                string filePath = Common.cache[CacheCommon.FILE_CONTENT_PATH] as string;
+                string fileContents = Common.cache[CacheCommon.FILE_CONTENT] as string;
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.LoadXml(fileContents);
                 XmlElement root = xmlDoc.DocumentElement;
@@ -99,12 +99,12 @@ namespace Rimworld.Models
                 fileContents = File.ReadAllText(filePath);
 
 
-                Common.writeCache("filecontents", fileContents);
-                Common.writeCache("filecontentsPath", filePath);              
+                Common.writeCache(CacheCommon.FILE_CONTENT, fileContents);
+                Common.writeCache(CacheCommon.FILE_CONTENT_PATH, filePath);              
             }
             else
             {
-                cache.Remove("filecontents");               
+                cache.Remove(CacheCommon.FILE_CONTENT);               
             }
           
             return fileContents;
@@ -171,10 +171,10 @@ namespace Rimworld.Models
 
         public static void saveFile(XmlDocument xmlDoc)
         {
-            string filePath = Common.cache["filecontentsPath"] as string;
+            string filePath = Common.cache[CacheCommon.FILE_CONTENT_PATH] as string;
 
             string fileContents = Common.exportXmlDocToString(xmlDoc);
-            Common.writeCache("filecontents", fileContents);
+            Common.writeCache(CacheCommon.FILE_CONTENT, fileContents);
 
             xmlDoc.Save(filePath);
             Common.loadFile(filePath);

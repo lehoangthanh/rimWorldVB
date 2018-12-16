@@ -33,7 +33,6 @@
             this.cbx_ListFilesSave = new System.Windows.Forms.ComboBox();
             this.btn_load_file = new System.Windows.Forms.Button();
             this.btn_up_skill = new System.Windows.Forms.Button();
-            this.panel_people = new System.Windows.Forms.Panel();
             this.dgv_ListPeople = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +42,6 @@
             this.reload = new System.Windows.Forms.Button();
             this.btn_Stockpie = new System.Windows.Forms.Button();
             this.btn_People = new System.Windows.Forms.Button();
-            this.panel_people.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListPeople)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +84,7 @@
             // 
             // btn_up_skill
             // 
-            this.btn_up_skill.Location = new System.Drawing.Point(152, 12);
+            this.btn_up_skill.Location = new System.Drawing.Point(150, 107);
             this.btn_up_skill.Name = "btn_up_skill";
             this.btn_up_skill.Size = new System.Drawing.Size(97, 26);
             this.btn_up_skill.TabIndex = 4;
@@ -94,30 +92,23 @@
             this.btn_up_skill.UseVisualStyleBackColor = true;
             this.btn_up_skill.Click += new System.EventHandler(this.button_upSkill);
             // 
-            // panel_people
-            // 
-            this.panel_people.Controls.Add(this.dgv_ListPeople);
-            this.panel_people.Controls.Add(this.lbl_People);
-            this.panel_people.Controls.Add(this.btn_up_skill);
-            this.panel_people.Location = new System.Drawing.Point(0, 95);
-            this.panel_people.Name = "panel_people";
-            this.panel_people.Size = new System.Drawing.Size(964, 440);
-            this.panel_people.TabIndex = 5;
-            // 
             // dgv_ListPeople
             // 
             this.dgv_ListPeople.AllowUserToAddRows = false;
             this.dgv_ListPeople.AllowUserToDeleteRows = false;
+            this.dgv_ListPeople.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_ListPeople.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_ListPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ListPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.fullname,
             this.nick,
             this.kindDef});
-            this.dgv_ListPeople.Location = new System.Drawing.Point(3, 41);
+            this.dgv_ListPeople.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgv_ListPeople.Location = new System.Drawing.Point(0, 139);
             this.dgv_ListPeople.Name = "dgv_ListPeople";
             this.dgv_ListPeople.ReadOnly = true;
-            this.dgv_ListPeople.Size = new System.Drawing.Size(958, 396);
+            this.dgv_ListPeople.Size = new System.Drawing.Size(964, 396);
             this.dgv_ListPeople.TabIndex = 8;
             // 
             // id
@@ -125,31 +116,35 @@
             this.id.HeaderText = "Id";
             this.id.Name = "id";
             this.id.ReadOnly = true;
+            this.id.Width = 41;
             // 
             // fullname
             // 
             this.fullname.HeaderText = "Name";
             this.fullname.Name = "fullname";
             this.fullname.ReadOnly = true;
+            this.fullname.Width = 60;
             // 
             // nick
             // 
             this.nick.HeaderText = "Nick";
             this.nick.Name = "nick";
             this.nick.ReadOnly = true;
+            this.nick.Width = 54;
             // 
             // kindDef
             // 
             this.kindDef.HeaderText = "KindDef";
             this.kindDef.Name = "kindDef";
             this.kindDef.ReadOnly = true;
+            this.kindDef.Width = 70;
             // 
             // lbl_People
             // 
             this.lbl_People.AutoSize = true;
             this.lbl_People.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_People.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lbl_People.Location = new System.Drawing.Point(12, 9);
+            this.lbl_People.Location = new System.Drawing.Point(10, 107);
             this.lbl_People.Name = "lbl_People";
             this.lbl_People.Size = new System.Drawing.Size(134, 29);
             this.lbl_People.TabIndex = 6;
@@ -188,18 +183,18 @@
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(964, 535);
+            this.Controls.Add(this.dgv_ListPeople);
             this.Controls.Add(this.btn_People);
+            this.Controls.Add(this.lbl_People);
             this.Controls.Add(this.btn_Stockpie);
+            this.Controls.Add(this.btn_up_skill);
             this.Controls.Add(this.reload);
-            this.Controls.Add(this.panel_people);
             this.Controls.Add(this.btn_load_file);
             this.Controls.Add(this.cbx_ListFilesSave);
             this.Controls.Add(this.lbl_result_process);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel_people.ResumeLayout(false);
-            this.panel_people.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListPeople)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -213,7 +208,6 @@
         private System.Windows.Forms.ComboBox cbx_ListFilesSave;
         private System.Windows.Forms.Button btn_load_file;
         private System.Windows.Forms.Button btn_up_skill;
-        private System.Windows.Forms.Panel panel_people;
         private System.Windows.Forms.Label lbl_People;
         private System.Windows.Forms.DataGridView dgv_ListPeople;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;

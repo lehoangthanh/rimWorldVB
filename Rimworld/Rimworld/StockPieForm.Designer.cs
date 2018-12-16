@@ -35,11 +35,11 @@
             this.cbx_ListFilesSave = new System.Windows.Forms.ComboBox();
             this.lbl_result_process = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_people = new System.Windows.Forms.Panel();
-            this.dgv_ListStockePie = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_People = new System.Windows.Forms.Label();
-            this.panel_people.SuspendLayout();
+            this.dgv_ListStockePie = new System.Windows.Forms.DataGridView();
+            this.items = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_people = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListStockePie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,51 +110,66 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "File Save";
             // 
-            // panel_people
+            // lbl_People
             // 
-            this.panel_people.Controls.Add(this.dgv_ListStockePie);
-            this.panel_people.Controls.Add(this.lbl_People);
-            this.panel_people.Location = new System.Drawing.Point(2, 98);
-            this.panel_people.Name = "panel_people";
-            this.panel_people.Size = new System.Drawing.Size(796, 352);
-            this.panel_people.TabIndex = 17;
+            this.lbl_People.AutoSize = true;
+            this.lbl_People.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_People.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lbl_People.Location = new System.Drawing.Point(12, 108);
+            this.lbl_People.Name = "lbl_People";
+            this.lbl_People.Size = new System.Drawing.Size(150, 29);
+            this.lbl_People.TabIndex = 6;
+            this.lbl_People.Text = "List Stockpie";
             // 
             // dgv_ListStockePie
             // 
             this.dgv_ListStockePie.AllowUserToAddRows = false;
             this.dgv_ListStockePie.AllowUserToDeleteRows = false;
+            this.dgv_ListStockePie.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_ListStockePie.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_ListStockePie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ListStockePie.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name});
-            this.dgv_ListStockePie.Location = new System.Drawing.Point(3, 38);
+            this.name,
+            this.items});
+            this.dgv_ListStockePie.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgv_ListStockePie.Location = new System.Drawing.Point(0, 139);
             this.dgv_ListStockePie.Name = "dgv_ListStockePie";
             this.dgv_ListStockePie.ReadOnly = true;
-            this.dgv_ListStockePie.Size = new System.Drawing.Size(793, 311);
+            this.dgv_ListStockePie.Size = new System.Drawing.Size(800, 311);
             this.dgv_ListStockePie.TabIndex = 8;
+            // 
+            // items
+            // 
+            this.items.HeaderText = "Items";
+            this.items.Name = "items";
+            this.items.ReadOnly = true;
+            this.items.Width = 57;
             // 
             // name
             // 
             this.name.HeaderText = "Name";
             this.name.Name = "name";
             this.name.ReadOnly = true;
+            this.name.Width = 60;
             // 
-            // lbl_People
+            // panel_people
             // 
-            this.lbl_People.AutoSize = true;
-            this.lbl_People.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_People.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lbl_People.Location = new System.Drawing.Point(12, 9);
-            this.lbl_People.Name = "lbl_People";
-            this.lbl_People.Size = new System.Drawing.Size(150, 29);
-            this.lbl_People.TabIndex = 6;
-            this.lbl_People.Text = "List Stockpie";
+            this.panel_people.AutoSize = true;
+            this.panel_people.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel_people.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_people.Location = new System.Drawing.Point(0, 450);
+            this.panel_people.Name = "panel_people";
+            this.panel_people.Size = new System.Drawing.Size(800, 0);
+            this.panel_people.TabIndex = 17;
             // 
             // StockPieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgv_ListStockePie);
             this.Controls.Add(this.panel_people);
+            this.Controls.Add(this.lbl_People);
             this.Controls.Add(this.btn_People);
             this.Controls.Add(this.btn_Stockpie);
             this.Controls.Add(this.reload);
@@ -164,8 +179,7 @@
             this.Controls.Add(this.label1);
             this.Name = "StockPieForm";
             this.Text = "StockPie";
-            this.panel_people.ResumeLayout(false);
-            this.panel_people.PerformLayout();
+            this.Load += new System.EventHandler(this.StockPieForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListStockePie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -181,9 +195,10 @@
         private System.Windows.Forms.ComboBox cbx_ListFilesSave;
         private System.Windows.Forms.Label lbl_result_process;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel_people;
-        private System.Windows.Forms.DataGridView dgv_ListStockePie;
         private System.Windows.Forms.Label lbl_People;
+        private System.Windows.Forms.DataGridView dgv_ListStockePie;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn items;
+        private System.Windows.Forms.Panel panel_people;
     }
 }

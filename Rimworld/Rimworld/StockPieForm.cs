@@ -26,6 +26,8 @@ namespace Rimworld
             {
                 this.dashboarPrensters = new DashboarPrensters(this);
             }
+            cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();
+
             StockPie.showDataGirdView(dgv_ListStockePie);
             dgv_ListStockePie.CellClick += new DataGridViewCellEventHandler(dgv_ListStockePie_CellContentClick);
 
@@ -51,6 +53,8 @@ namespace Rimworld
 
             Common.loadFile(filePath);
 
+            StockPie.showDataGirdView(dgv_ListStockePie);
+            dgv_ListStockePie.CellClick += new DataGridViewCellEventHandler(dgv_ListStockePie_CellContentClick);
 
             Common.showMessage(lbl_result_process, "Load File Thành Công...", 2);
         }
@@ -62,9 +66,7 @@ namespace Rimworld
             {
                 this.dashboarPrensters = new DashboarPrensters(this);
             }
-            cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();
-            StockPie.showDataGirdView(dgv_ListStockePie);
-            dgv_ListStockePie.CellClick += new DataGridViewCellEventHandler(dgv_ListStockePie_CellContentClick);
+            cbx_ListFilesSave.DataSource = this.dashboarPrensters.showListFilesSave();           
 
             Common.showMessage(lbl_result_process, "Reload Thành Công...", 2);
         }
@@ -72,34 +74,23 @@ namespace Rimworld
         void dgv_ListStockePie_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = (DataGridViewRow)dgv_ListStockePie.Rows[e.RowIndex];
-            string cellType = row.Cells[e.ColumnIndex].GetType().ToString();
+            DataGridViewCell cell = row.Cells[e.ColumnIndex];
+            string cellType = cell.GetType().ToString();
             if (cellType != "System.Windows.Forms.DataGridViewButtonCell") return;
             ItemInStockForm form =new ItemInStockForm();
             
             bool showForm = Application.OpenForms.Cast<Form>().Any(f => (f.Name == form.Name));
             if (!showForm)
             {
-                //Common.writeCache('')
-                form.Show();
-            }
+                //string stockName = row.Cells["name"].Value.ToString();
+                //Common.writeCache(CacheCommon.STOCK_ID_PROCCESSING, stockName);
+                //form.Show();
 
+            }           
+        }
 
-            //Common.showMessage(lbl_result_process, "Đang xử lý...");
-
-            //DataGridViewButtonCell btnCell = (DataGridViewButtonCell)row.Cells[e.ColumnIndex];
-            //btnCell.ReadOnly = true;
-            //string id = "";
-            //string btnAction = btnCell.Value.ToString().ToLower();
-            //switch (btnAction)
-            //{
-            //    case "delete":
-            //        {
-            //            id = People.delete(row, dgv_ListPeople);
-            //            break;
-            //        }
-            //}
-
-            //Common.showMessage(lbl_result_process, btnAction + " Thành Công...", 5);
+        private void StockPieForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

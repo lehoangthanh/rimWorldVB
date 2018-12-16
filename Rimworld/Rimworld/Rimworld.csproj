@@ -59,6 +59,7 @@
     <Compile Include="ItemInStockForm.Designer.cs">
       <DependentUpon>ItemInStockForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CacheCommon.cs" />
     <Compile Include="Models\Common.cs" />
     <Compile Include="Models\People.cs" />
     <Compile Include="Models\StockPie.cs" />
