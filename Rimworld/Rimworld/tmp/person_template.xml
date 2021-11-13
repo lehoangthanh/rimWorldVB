@@ -1,0 +1,2494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<def>Human</def>
+<id>Human776</id>
+<pos>(91, 0, 128)</pos>
+<rot>1</rot>
+<faction>Faction_9</faction>
+<kindDef>Tribesperson</kindDef>
+<gender>Female</gender>
+<name Class=\"NameTriple\">
+  <first>Engo</first>
+  <nick>Braña</nick>
+  <last>Braña</last>
+</name>
+<corpse>null</corpse>
+<mindState>
+  <lastJobTag>Idle</lastJobTag>
+  <lastJobGiverKey>909807613</lastJobGiverKey>
+  <lastJobGiverThinkTree>Humanlike</lastJobGiverThinkTree>
+  <lastIngestTick>1689870</lastIngestTick>
+  <nextApparelOptimizeTick>1708678</nextApparelOptimizeTick>
+  <lastEngageTargetTick>1633700</lastEngageTargetTick>
+  <canFleeIndividual>True</canFleeIndividual>
+  <lastInventoryRawFoodUseTick>1058632</lastInventoryRawFoodUseTick>
+  <nextMoveOrderIsWait>False</nextMoveOrderIsWait>
+  <thinkData>
+    <keys>
+      <li>1553714162</li>
+    </keys>
+    <values>
+      <li>1687480</li>
+    </values>
+  </thinkData>
+  <meleeThreat>null</meleeThreat>
+  <enemyTarget>null</enemyTarget>
+  <knownExploder>null</knownExploder>
+  <lastMannedThing>null</lastMannedThing>
+  <duty IsNull=\"True\" />
+  <mentalStateHandler>
+    <curState IsNull=\"True\" />
+  </mentalStateHandler>
+  <mentalBreaker />
+  <priorityWork>
+    <prioritizedCell>(-1000, -1000, -1000)</prioritizedCell>
+  </priorityWork>
+</mindState>
+<jobs>
+  <curJob>
+    <commTarget>null</commTarget>
+    <verbToUse>null</verbToUse>
+    <bill>null</bill>
+    <def>GotoWander</def>
+    <targetA>(98, 0, 131)</targetA>
+    <targetQueueA IsNull=\"True\" />
+    <targetQueueB IsNull=\"True\" />
+    <numToBring IsNull=\"True\" />
+    <placedThings IsNull=\"True\" />
+    <startTick>1707870</startTick>
+    <locomotionUrgency>Walk</locomotionUrgency>
+  </curJob>
+  <curDriver Class=\"JobDriver_Goto\">
+    <curToilIndex>0</curToilIndex>
+    <ticksLeftThisToil>-86</ticksLeftThisToil>
+    <curToilCompleteMode>PatherArrival</curToilCompleteMode>
+    <startTick>1707870</startTick>
+    <layingDownBed>null</layingDownBed>
+  </curDriver>
+  <jobQueue>
+    <jobs />
+  </jobQueue>
+</jobs>
+<stances>
+  <staggerUntilTick>1624277</staggerUntilTick>
+  <stunner />
+  <curStance Class=\"Stance_Mobile\" />
+</stances>
+<verbTracker>
+  <verbs>
+    <li Class=\"Verb_MeleeAttack\">
+      <loadID>41</loadID>
+      <currentTarget>Thing_Human786</currentTarget>
+    </li>
+    <li Class=\"Verb_MeleeAttack\">
+      <loadID>42</loadID>
+      <currentTarget>Thing_Human786</currentTarget>
+    </li>
+  </verbs>
+</verbTracker>
+<natives>
+  <beatFireVerb>
+    <loadID>12</loadID>
+  </beatFireVerb>
+  <igniteVerb>
+    <loadID>13</loadID>
+  </igniteVerb>
+</natives>
+<meleeVerbs>
+  <curMeleeVerb>Verb_42</curMeleeVerb>
+  <curMeleeVerbUpdateTick>1620286</curMeleeVerbUpdateTick>
+</meleeVerbs>
+<pather>
+  <nextCell>(92, 0, 128)</nextCell>
+  <nextCellCostLeft>16</nextCellCostLeft>
+  <nextCellCostInitial>50</nextCellCostInitial>
+  <peMode>OnCell</peMode>
+  <cellsUntilClamor>1</cellsUntilClamor>
+  <lastMovedTick>1707956</lastMovedTick>
+  <destination>(98, 0, 131)</destination>
+</pather>
+<carrier>
+  <container>
+    <maxStacks>1</maxStacks>
+    <innerList />
+  </container>
+</carrier>
+<apparel>
+  <wornApparel>
+    <li>
+      <def>Apparel_Pants</def>
+      <id>Apparel_Pants311</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_BasicShirt</def>
+      <id>Apparel_BasicShirt310</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_Jacket</def>
+      <id>Apparel_Jacket309</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_Tuque</def>
+      <id>Apparel_Tuque71865</id>
+      <pos>(20, 0, 137)</pos>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Hyperweave</stuff>
+    </li>
+  </wornApparel>
+  <lastApparelWearoutTick>1706250</lastApparelWearoutTick>
+</apparel>
+<story>
+  <childhood>TribeChild1788331878</childhood>
+  <adulthood>Weaver-1485334390</adulthood>
+  <skinWhiteness>0.8418421</skinWhiteness>
+  <hairColor>RGBA(0.458, 0.558, 0.479, 1.000)</hairColor>
+  <crownType>Average</crownType>
+  <headGraphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</headGraphicPath>
+  <hairDef>BraidedKnot</hairDef>
+  <traits>
+    <allTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+      <li>
+        <def>PsychicSensitivity</def>
+        <degree>1</degree>
+      </li>
+      <li>
+        <def>Prosthophobe</def>
+      </li>
+    </allTraits>
+  </traits>
+</story>
+<equipment>
+  <primary>
+    <def>Gun_AssaultRifle</def>
+    <id>Gun_AssaultRifle269110</id>
+    <pos>(95, 0, 134)</pos>
+    <health>100000</health>
+    <stackCount>1</stackCount>
+    <verbTracker>
+      <verbs>
+        <li Class=\"Verb_Shoot\">
+          <loadID>7700552</loadID>
+        </li>
+      </verbs>
+    </verbTracker>
+    <quality>Legendary</quality>
+    <taleRef IsNull=\"True\" />
+  </primary>
+</equipment>
+<drafter>
+  <drafter>
+    <autoUndrafter>
+      <lastNonWaitingTick>1707900</lastNonWaitingTick>
+    </autoUndrafter>
+  </drafter>
+</drafter>
+<ageTracker>
+  <ageBiologicalTicks>124498986</ageBiologicalTicks>
+  <birthAbsTicks>-119176030</birthAbsTicks>
+</ageTracker>
+<healthTracker>
+  <hediffSet>
+    <hediffs />
+  </hediffSet>
+  <surgeryBills>
+    <bills />
+  </surgeryBills>
+  <immunity>
+    <imList />
+  </immunity>
+</healthTracker>
+<records>
+  <records>
+    <vals>
+      <li>6</li>
+      <li>2</li>
+      <li>4</li>
+      <li>0</li>
+      <li>4</li>
+      <li>2</li>
+      <li>2</li>
+      <li>0</li>
+      <li>135</li>
+      <li>2</li>
+      <li>408</li>
+      <li>34</li>
+      <li>1</li>
+      <li>0</li>
+      <li>35</li>
+      <li>0</li>
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>338</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>351</li>
+      <li>28</li>
+      <li>19</li>
+      <li>2</li>
+      <li>365</li>
+      <li>406.9151</li>
+      <li>0</li>
+      <li>42.15001</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>3</li>
+      <li>0</li>
+      <li>1</li>
+      <li>0</li>
+      <li>1708000</li>
+      <li>0</li>
+      <li>465840</li>
+      <li>27520</li>
+      <li>0</li>
+      <li>69840</li>
+      <li>140000</li>
+      <li>1070560</li>
+      <li>10800</li>
+      <li>0</li>
+      <li>480</li>
+      <li>313600</li>
+      <li>0</li>
+      <li>12080</li>
+      <li>0</li>
+      <li>8800</li>
+      <li>41440</li>
+      <li>3040</li>
+      <li>160</li>
+      <li>78240</li>
+      <li>0</li>
+      <li>1280</li>
+      <li>6720</li>
+    </vals>
+  </records>
+</records>
+<inventory>
+  <container>
+    <innerList>
+      <li Class=\"ThingWithComps\">
+        <def>MealSurvivalPack</def>
+        <id>MealSurvivalPack505192</id>
+        <health>993</health>
+        <stackCount>1</stackCount>
+        <ingredients />
+      </li>
+    </innerList>
+  </container>
+</inventory>
+<filth>
+  <carriedFilth>
+    <li>
+      <def>FilthDirt</def>
+      <id>FilthDirt550295</id>
+      <thickness>2</thickness>
+    </li>
+  </carriedFilth>
+</filth>
+<needs>
+  <needs>
+    <li Class=\"Need_Mood\">
+      <def>Mood</def>
+      <curLevel>0.9471998</curLevel>
+      <thoughts>
+        <memories>
+          <memories>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>0.93</moodPowerFactor>
+              <age>26100</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>117981.4</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>8400</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>152475.8</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>2850</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>139767.2</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>49200</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>121613</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>54000</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>83491.07</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1193700</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1090500</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1084350</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>0.875</moodPowerFactor>
+              <age>57300</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>61713.52</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>981150</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>966900</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>905700</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>898950</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>896400</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>846000</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>801150</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>783600</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>775950</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>773550</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>747900</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>747000</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>735000</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>679950</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>661800</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>660450</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>548250</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>540900</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>489300</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>436950</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>419550</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>414750</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>402000</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>377700</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>364050</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>197550</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>PawnWithGoodOpinionDied</def>
+              <age>87150</age>
+              <subject>Trobo</subject>
+            </li>
+            <li>
+              <def>KilledHumanlikeBloodlust</def>
+              <age>86250</age>
+            </li>
+            <li>
+              <def>WitnessedDeathBloodlust</def>
+              <age>85200</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>84150</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>InsultedMood</def>
+              <age>84150</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>HarmedMe</def>
+              <age>83850</age>
+              <subject>Armadillo</subject>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-15</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>HadCatharticFight</def>
+              <age>83700</age>
+              <subject>Armadillo</subject>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>38</opinionOffset>
+            </li>
+            <li>
+              <def>PawnWithGoodOpinionDied</def>
+              <age>49350</age>
+              <subject>Mosquito</subject>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>42900</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>AteFineMeal</def>
+              <age>18150</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>9600</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>InsultedMood</def>
+              <age>9600</age>
+            </li>
+          </memories>
+        </memories>
+      </thoughts>
+      <recentMemory>
+        <lastLightTick>1707874</lastLightTick>
+        <lastOutdoorTick>1699174</lastOutdoorTick>
+      </recentMemory>
+    </li>
+    <li Class=\"Need_Food\">
+      <def>Food</def>
+      <curLevel>0.9559999</curLevel>
+      <ticksToNextStarveDamage>2250</ticksToNextStarveDamage>
+      <lastNonStarvingTick>1707874</lastNonStarvingTick>
+    </li>
+    <li Class=\"Need_Rest\">
+      <def>Rest</def>
+      <curLevel>0.9738749</curLevel>
+    </li>
+    <li Class=\"Need_Joy\">
+      <def>Joy</def>
+      <curLevel>0.9879999</curLevel>
+      <tolerances>
+        <vals>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0.1369174</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+        </vals>
+      </tolerances>
+    </li>
+    <li Class=\"Need_Beauty\">
+      <def>Beauty</def>
+      <curLevel>0.9471998</curLevel>
+    </li>
+    <li Class=\"Need_Comfort\">
+      <def>Comfort</def>
+      <curLevel>0.9736002</curLevel>
+    </li>
+    <li Class=\"Need_Space\">
+      <def>Space</def>
+      <curLevel>0.507942</curLevel>
+    </li>
+  </needs>
+</needs>
+<guest>
+  <hostFaction>null</hostFaction>
+  <getsFood>True</getsFood>
+</guest>
+<social>
+  <directRelations />
+</social>
+<ownership>
+  <ownedBed>Thing_Bed120080</ownedBed>
+  <assignedGrave>null</assignedGrave>
+</ownership>
+<interactions>
+  <lastInteractionTime>1706704</lastInteractionTime>
+</interactions>
+<skills>
+  <skills>
+    <li>
+      <def>Shooting</def>
+      <level>99999</level>
+      <xpSinceLastLevel>11176.76</xpSinceLastLevel>
+      <passion>Minor</passion>
+    </li>
+    <li>
+      <def>Melee</def>
+      <level>99999</level>
+      <xpSinceLastLevel>2917.317</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Social</def>
+      <level>99999</level>
+      <xpSinceLastLevel>1751.28</xpSinceLastLevel>
+      <xpSinceMidnight>9.989999</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Animals</def>
+      <level>99999</level>
+      <xpSinceLastLevel>518.138</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Medicine</def>
+      <level>19</level>
+      <xpSinceLastLevel>19198.46</xpSinceLastLevel>
+      <xpSinceMidnight>-1454</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Cooking</def>
+      <level>19</level>
+      <xpSinceLastLevel>18991.46</xpSinceLastLevel>
+      <passion>Minor</passion>
+      <xpSinceMidnight>-1384</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Construction</def>
+      <level>99999</level>
+      <xpSinceLastLevel>1810.719</xpSinceLastLevel>
+      <xpSinceMidnight>0.091575</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Growing</def>
+      <level>99999</level>
+      <xpSinceLastLevel>2305.228</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Mining</def>
+      <level>99999</level>
+      <xpSinceLastLevel>3673.613</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Artistic</def>
+      <level>19</level>
+      <xpSinceLastLevel>18620.6</xpSinceLastLevel>
+      <xpSinceMidnight>-1290</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Crafting</def>
+      <level>20</level>
+      <xpSinceLastLevel>88.3199</xpSinceLastLevel>
+      <passion>Minor</passion>
+      <xpSinceMidnight>-1720</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Research</def>
+      <level>99999</level>
+      <xpSinceLastLevel>267.4542</xpSinceLastLevel>
+    </li>
+  </skills>
+</skills>
+<workSettings>
+  <priorities>
+    <vals>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+    </vals>
+  </priorities>
+</workSettings>
+<trader IsNull=\"True\" />
+<outfits>
+  <curOutfit>Outfit_Anything1</curOutfit>
+  <overrideHandler>
+    <forcedAps />
+  </overrideHandler>
+</outfits>
+<timetable>
+  <times>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+  </times>
+</timetable>
+<playerSettings>
+  <medCare>Best</medCare>
+  <areaAllowed>null</areaAllowed>
+  <master>null</master>
+</playerSettings>
+<training IsNull=\"True\" /><?xml version="1.0" encoding="utf-8"?>
+<def>Human</def>
+<id>Human776</id>
+<pos>(91, 0, 128)</pos>
+<rot>1</rot>
+<faction>Faction_9</faction>
+<kindDef>Tribesperson</kindDef>
+<gender>Female</gender>
+<name Class=\"NameTriple\">
+  <first>Engo</first>
+  <nick>Braña</nick>
+  <last>Braña</last>
+</name>
+<corpse>null</corpse>
+<mindState>
+  <lastJobTag>Idle</lastJobTag>
+  <lastJobGiverKey>909807613</lastJobGiverKey>
+  <lastJobGiverThinkTree>Humanlike</lastJobGiverThinkTree>
+  <lastIngestTick>1689870</lastIngestTick>
+  <nextApparelOptimizeTick>1708678</nextApparelOptimizeTick>
+  <lastEngageTargetTick>1633700</lastEngageTargetTick>
+  <canFleeIndividual>True</canFleeIndividual>
+  <lastInventoryRawFoodUseTick>1058632</lastInventoryRawFoodUseTick>
+  <nextMoveOrderIsWait>False</nextMoveOrderIsWait>
+  <thinkData>
+    <keys>
+      <li>1553714162</li>
+    </keys>
+    <values>
+      <li>1687480</li>
+    </values>
+  </thinkData>
+  <meleeThreat>null</meleeThreat>
+  <enemyTarget>null</enemyTarget>
+  <knownExploder>null</knownExploder>
+  <lastMannedThing>null</lastMannedThing>
+  <duty IsNull=\"True\" />
+  <mentalStateHandler>
+    <curState IsNull=\"True\" />
+  </mentalStateHandler>
+  <mentalBreaker />
+  <priorityWork>
+    <prioritizedCell>(-1000, -1000, -1000)</prioritizedCell>
+  </priorityWork>
+</mindState>
+<jobs>
+  <curJob>
+    <commTarget>null</commTarget>
+    <verbToUse>null</verbToUse>
+    <bill>null</bill>
+    <def>GotoWander</def>
+    <targetA>(98, 0, 131)</targetA>
+    <targetQueueA IsNull=\"True\" />
+    <targetQueueB IsNull=\"True\" />
+    <numToBring IsNull=\"True\" />
+    <placedThings IsNull=\"True\" />
+    <startTick>1707870</startTick>
+    <locomotionUrgency>Walk</locomotionUrgency>
+  </curJob>
+  <curDriver Class=\"JobDriver_Goto\">
+    <curToilIndex>0</curToilIndex>
+    <ticksLeftThisToil>-86</ticksLeftThisToil>
+    <curToilCompleteMode>PatherArrival</curToilCompleteMode>
+    <startTick>1707870</startTick>
+    <layingDownBed>null</layingDownBed>
+  </curDriver>
+  <jobQueue>
+    <jobs />
+  </jobQueue>
+</jobs>
+<stances>
+  <staggerUntilTick>1624277</staggerUntilTick>
+  <stunner />
+  <curStance Class=\"Stance_Mobile\" />
+</stances>
+<verbTracker>
+  <verbs>
+    <li Class=\"Verb_MeleeAttack\">
+      <loadID>41</loadID>
+      <currentTarget>Thing_Human786</currentTarget>
+    </li>
+    <li Class=\"Verb_MeleeAttack\">
+      <loadID>42</loadID>
+      <currentTarget>Thing_Human786</currentTarget>
+    </li>
+  </verbs>
+</verbTracker>
+<natives>
+  <beatFireVerb>
+    <loadID>12</loadID>
+  </beatFireVerb>
+  <igniteVerb>
+    <loadID>13</loadID>
+  </igniteVerb>
+</natives>
+<meleeVerbs>
+  <curMeleeVerb>Verb_42</curMeleeVerb>
+  <curMeleeVerbUpdateTick>1620286</curMeleeVerbUpdateTick>
+</meleeVerbs>
+<pather>
+  <nextCell>(92, 0, 128)</nextCell>
+  <nextCellCostLeft>16</nextCellCostLeft>
+  <nextCellCostInitial>50</nextCellCostInitial>
+  <peMode>OnCell</peMode>
+  <cellsUntilClamor>1</cellsUntilClamor>
+  <lastMovedTick>1707956</lastMovedTick>
+  <destination>(98, 0, 131)</destination>
+</pather>
+<carrier>
+  <container>
+    <maxStacks>1</maxStacks>
+    <innerList />
+  </container>
+</carrier>
+<apparel>
+  <wornApparel>
+    <li>
+      <def>Apparel_Pants</def>
+      <id>Apparel_Pants311</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_BasicShirt</def>
+      <id>Apparel_BasicShirt310</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_Jacket</def>
+      <id>Apparel_Jacket309</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_Tuque</def>
+      <id>Apparel_Tuque71865</id>
+      <pos>(20, 0, 137)</pos>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Hyperweave</stuff>
+    </li>
+  </wornApparel>
+  <lastApparelWearoutTick>1706250</lastApparelWearoutTick>
+</apparel>
+<story>
+  <childhood>TribeChild1788331878</childhood>
+  <adulthood>Weaver-1485334390</adulthood>
+  <skinWhiteness>0.8418421</skinWhiteness>
+  <hairColor>RGBA(0.458, 0.558, 0.479, 1.000)</hairColor>
+  <crownType>Average</crownType>
+  <headGraphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</headGraphicPath>
+  <hairDef>BraidedKnot</hairDef>
+  <traits>
+    <allTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+      <li>
+        <def>PsychicSensitivity</def>
+        <degree>1</degree>
+      </li>
+      <li>
+        <def>Prosthophobe</def>
+      </li>
+    </allTraits>
+  </traits>
+</story>
+<equipment>
+  <primary>
+    <def>Gun_AssaultRifle</def>
+    <id>Gun_AssaultRifle269110</id>
+    <pos>(95, 0, 134)</pos>
+    <health>100000</health>
+    <stackCount>1</stackCount>
+    <verbTracker>
+      <verbs>
+        <li Class=\"Verb_Shoot\">
+          <loadID>7700552</loadID>
+        </li>
+      </verbs>
+    </verbTracker>
+    <quality>Legendary</quality>
+    <taleRef IsNull=\"True\" />
+  </primary>
+</equipment>
+<drafter>
+  <drafter>
+    <autoUndrafter>
+      <lastNonWaitingTick>1707900</lastNonWaitingTick>
+    </autoUndrafter>
+  </drafter>
+</drafter>
+<ageTracker>
+  <ageBiologicalTicks>124498986</ageBiologicalTicks>
+  <birthAbsTicks>-119176030</birthAbsTicks>
+</ageTracker>
+<healthTracker>
+  <hediffSet>
+    <hediffs />
+  </hediffSet>
+  <surgeryBills>
+    <bills />
+  </surgeryBills>
+  <immunity>
+    <imList />
+  </immunity>
+</healthTracker>
+<records>
+  <records>
+    <vals>
+      <li>6</li>
+      <li>2</li>
+      <li>4</li>
+      <li>0</li>
+      <li>4</li>
+      <li>2</li>
+      <li>2</li>
+      <li>0</li>
+      <li>135</li>
+      <li>2</li>
+      <li>408</li>
+      <li>34</li>
+      <li>1</li>
+      <li>0</li>
+      <li>35</li>
+      <li>0</li>
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>338</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>351</li>
+      <li>28</li>
+      <li>19</li>
+      <li>2</li>
+      <li>365</li>
+      <li>406.9151</li>
+      <li>0</li>
+      <li>42.15001</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>3</li>
+      <li>0</li>
+      <li>1</li>
+      <li>0</li>
+      <li>1708000</li>
+      <li>0</li>
+      <li>465840</li>
+      <li>27520</li>
+      <li>0</li>
+      <li>69840</li>
+      <li>140000</li>
+      <li>1070560</li>
+      <li>10800</li>
+      <li>0</li>
+      <li>480</li>
+      <li>313600</li>
+      <li>0</li>
+      <li>12080</li>
+      <li>0</li>
+      <li>8800</li>
+      <li>41440</li>
+      <li>3040</li>
+      <li>160</li>
+      <li>78240</li>
+      <li>0</li>
+      <li>1280</li>
+      <li>6720</li>
+    </vals>
+  </records>
+</records>
+<inventory>
+  <container>
+    <innerList>
+      <li Class=\"ThingWithComps\">
+        <def>MealSurvivalPack</def>
+        <id>MealSurvivalPack505192</id>
+        <health>993</health>
+        <stackCount>1</stackCount>
+        <ingredients />
+      </li>
+    </innerList>
+  </container>
+</inventory>
+<filth>
+  <carriedFilth>
+    <li>
+      <def>FilthDirt</def>
+      <id>FilthDirt550295</id>
+      <thickness>2</thickness>
+    </li>
+  </carriedFilth>
+</filth>
+<needs>
+  <needs>
+    <li Class=\"Need_Mood\">
+      <def>Mood</def>
+      <curLevel>0.9471998</curLevel>
+      <thoughts>
+        <memories>
+          <memories>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>0.93</moodPowerFactor>
+              <age>26100</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>117981.4</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>8400</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>152475.8</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>2850</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>139767.2</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>49200</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>121613</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>54000</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>83491.07</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1193700</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1090500</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1084350</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>0.875</moodPowerFactor>
+              <age>57300</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>61713.52</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>981150</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>966900</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>905700</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>898950</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>896400</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>846000</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>801150</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>783600</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>775950</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>773550</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>747900</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>747000</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>735000</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>679950</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>661800</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>660450</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>548250</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>540900</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>489300</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>436950</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>419550</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>414750</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>402000</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>377700</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>364050</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>197550</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>PawnWithGoodOpinionDied</def>
+              <age>87150</age>
+              <subject>Trobo</subject>
+            </li>
+            <li>
+              <def>KilledHumanlikeBloodlust</def>
+              <age>86250</age>
+            </li>
+            <li>
+              <def>WitnessedDeathBloodlust</def>
+              <age>85200</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>84150</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>InsultedMood</def>
+              <age>84150</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>HarmedMe</def>
+              <age>83850</age>
+              <subject>Armadillo</subject>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-15</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>HadCatharticFight</def>
+              <age>83700</age>
+              <subject>Armadillo</subject>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>38</opinionOffset>
+            </li>
+            <li>
+              <def>PawnWithGoodOpinionDied</def>
+              <age>49350</age>
+              <subject>Mosquito</subject>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>42900</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>AteFineMeal</def>
+              <age>18150</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>9600</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>InsultedMood</def>
+              <age>9600</age>
+            </li>
+          </memories>
+        </memories>
+      </thoughts>
+      <recentMemory>
+        <lastLightTick>1707874</lastLightTick>
+        <lastOutdoorTick>1699174</lastOutdoorTick>
+      </recentMemory>
+    </li>
+    <li Class=\"Need_Food\">
+      <def>Food</def>
+      <curLevel>0.9559999</curLevel>
+      <ticksToNextStarveDamage>2250</ticksToNextStarveDamage>
+      <lastNonStarvingTick>1707874</lastNonStarvingTick>
+    </li>
+    <li Class=\"Need_Rest\">
+      <def>Rest</def>
+      <curLevel>0.9738749</curLevel>
+    </li>
+    <li Class=\"Need_Joy\">
+      <def>Joy</def>
+      <curLevel>0.9879999</curLevel>
+      <tolerances>
+        <vals>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0.1369174</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+        </vals>
+      </tolerances>
+    </li>
+    <li Class=\"Need_Beauty\">
+      <def>Beauty</def>
+      <curLevel>0.9471998</curLevel>
+    </li>
+    <li Class=\"Need_Comfort\">
+      <def>Comfort</def>
+      <curLevel>0.9736002</curLevel>
+    </li>
+    <li Class=\"Need_Space\">
+      <def>Space</def>
+      <curLevel>0.507942</curLevel>
+    </li>
+  </needs>
+</needs>
+<guest>
+  <hostFaction>null</hostFaction>
+  <getsFood>True</getsFood>
+</guest>
+<social>
+  <directRelations />
+</social>
+<ownership>
+  <ownedBed>Thing_Bed120080</ownedBed>
+  <assignedGrave>null</assignedGrave>
+</ownership>
+<interactions>
+  <lastInteractionTime>1706704</lastInteractionTime>
+</interactions>
+<skills>
+  <skills>
+    <li>
+      <def>Shooting</def>
+      <level>99999</level>
+      <xpSinceLastLevel>11176.76</xpSinceLastLevel>
+      <passion>Minor</passion>
+    </li>
+    <li>
+      <def>Melee</def>
+      <level>99999</level>
+      <xpSinceLastLevel>2917.317</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Social</def>
+      <level>99999</level>
+      <xpSinceLastLevel>1751.28</xpSinceLastLevel>
+      <xpSinceMidnight>9.989999</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Animals</def>
+      <level>99999</level>
+      <xpSinceLastLevel>518.138</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Medicine</def>
+      <level>19</level>
+      <xpSinceLastLevel>19198.46</xpSinceLastLevel>
+      <xpSinceMidnight>-1454</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Cooking</def>
+      <level>19</level>
+      <xpSinceLastLevel>18991.46</xpSinceLastLevel>
+      <passion>Minor</passion>
+      <xpSinceMidnight>-1384</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Construction</def>
+      <level>99999</level>
+      <xpSinceLastLevel>1810.719</xpSinceLastLevel>
+      <xpSinceMidnight>0.091575</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Growing</def>
+      <level>99999</level>
+      <xpSinceLastLevel>2305.228</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Mining</def>
+      <level>99999</level>
+      <xpSinceLastLevel>3673.613</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Artistic</def>
+      <level>19</level>
+      <xpSinceLastLevel>18620.6</xpSinceLastLevel>
+      <xpSinceMidnight>-1290</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Crafting</def>
+      <level>20</level>
+      <xpSinceLastLevel>88.3199</xpSinceLastLevel>
+      <passion>Minor</passion>
+      <xpSinceMidnight>-1720</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Research</def>
+      <level>99999</level>
+      <xpSinceLastLevel>267.4542</xpSinceLastLevel>
+    </li>
+  </skills>
+</skills>
+<workSettings>
+  <priorities>
+    <vals>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+    </vals>
+  </priorities>
+</workSettings>
+<trader IsNull=\"True\" />
+<outfits>
+  <curOutfit>Outfit_Anything1</curOutfit>
+  <overrideHandler>
+    <forcedAps />
+  </overrideHandler>
+</outfits>
+<timetable>
+  <times>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+  </times>
+</timetable>
+<playerSettings>
+  <medCare>Best</medCare>
+  <areaAllowed>null</areaAllowed>
+  <master>null</master>
+</playerSettings>
+<training IsNull=\"True\" /><?xml version="1.0" encoding="utf-8"?>
+<def>Human</def>
+<id>Human776</id>
+<pos>(91, 0, 128)</pos>
+<rot>1</rot>
+<faction>Faction_9</faction>
+<kindDef>Tribesperson</kindDef>
+<gender>Female</gender>
+<name Class=\"NameTriple\">
+  <first>Engo</first>
+  <nick>Braña</nick>
+  <last>Braña</last>
+</name>
+<corpse>null</corpse>
+<mindState>
+  <lastJobTag>Idle</lastJobTag>
+  <lastJobGiverKey>909807613</lastJobGiverKey>
+  <lastJobGiverThinkTree>Humanlike</lastJobGiverThinkTree>
+  <lastIngestTick>1689870</lastIngestTick>
+  <nextApparelOptimizeTick>1708678</nextApparelOptimizeTick>
+  <lastEngageTargetTick>1633700</lastEngageTargetTick>
+  <canFleeIndividual>True</canFleeIndividual>
+  <lastInventoryRawFoodUseTick>1058632</lastInventoryRawFoodUseTick>
+  <nextMoveOrderIsWait>False</nextMoveOrderIsWait>
+  <thinkData>
+    <keys>
+      <li>1553714162</li>
+    </keys>
+    <values>
+      <li>1687480</li>
+    </values>
+  </thinkData>
+  <meleeThreat>null</meleeThreat>
+  <enemyTarget>null</enemyTarget>
+  <knownExploder>null</knownExploder>
+  <lastMannedThing>null</lastMannedThing>
+  <duty IsNull=\"True\" />
+  <mentalStateHandler>
+    <curState IsNull=\"True\" />
+  </mentalStateHandler>
+  <mentalBreaker />
+  <priorityWork>
+    <prioritizedCell>(-1000, -1000, -1000)</prioritizedCell>
+  </priorityWork>
+</mindState>
+<jobs>
+  <curJob>
+    <commTarget>null</commTarget>
+    <verbToUse>null</verbToUse>
+    <bill>null</bill>
+    <def>GotoWander</def>
+    <targetA>(98, 0, 131)</targetA>
+    <targetQueueA IsNull=\"True\" />
+    <targetQueueB IsNull=\"True\" />
+    <numToBring IsNull=\"True\" />
+    <placedThings IsNull=\"True\" />
+    <startTick>1707870</startTick>
+    <locomotionUrgency>Walk</locomotionUrgency>
+  </curJob>
+  <curDriver Class=\"JobDriver_Goto\">
+    <curToilIndex>0</curToilIndex>
+    <ticksLeftThisToil>-86</ticksLeftThisToil>
+    <curToilCompleteMode>PatherArrival</curToilCompleteMode>
+    <startTick>1707870</startTick>
+    <layingDownBed>null</layingDownBed>
+  </curDriver>
+  <jobQueue>
+    <jobs />
+  </jobQueue>
+</jobs>
+<stances>
+  <staggerUntilTick>1624277</staggerUntilTick>
+  <stunner />
+  <curStance Class=\"Stance_Mobile\" />
+</stances>
+<verbTracker>
+  <verbs>
+    <li Class=\"Verb_MeleeAttack\">
+      <loadID>41</loadID>
+      <currentTarget>Thing_Human786</currentTarget>
+    </li>
+    <li Class=\"Verb_MeleeAttack\">
+      <loadID>42</loadID>
+      <currentTarget>Thing_Human786</currentTarget>
+    </li>
+  </verbs>
+</verbTracker>
+<natives>
+  <beatFireVerb>
+    <loadID>12</loadID>
+  </beatFireVerb>
+  <igniteVerb>
+    <loadID>13</loadID>
+  </igniteVerb>
+</natives>
+<meleeVerbs>
+  <curMeleeVerb>Verb_42</curMeleeVerb>
+  <curMeleeVerbUpdateTick>1620286</curMeleeVerbUpdateTick>
+</meleeVerbs>
+<pather>
+  <nextCell>(92, 0, 128)</nextCell>
+  <nextCellCostLeft>16</nextCellCostLeft>
+  <nextCellCostInitial>50</nextCellCostInitial>
+  <peMode>OnCell</peMode>
+  <cellsUntilClamor>1</cellsUntilClamor>
+  <lastMovedTick>1707956</lastMovedTick>
+  <destination>(98, 0, 131)</destination>
+</pather>
+<carrier>
+  <container>
+    <maxStacks>1</maxStacks>
+    <innerList />
+  </container>
+</carrier>
+<apparel>
+  <wornApparel>
+    <li>
+      <def>Apparel_Pants</def>
+      <id>Apparel_Pants311</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_BasicShirt</def>
+      <id>Apparel_BasicShirt310</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_Jacket</def>
+      <id>Apparel_Jacket309</id>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Synthread</stuff>
+      <quality>Normal</quality>
+    </li>
+    <li>
+      <def>Apparel_Tuque</def>
+      <id>Apparel_Tuque71865</id>
+      <pos>(20, 0, 137)</pos>
+      <health>99999</health>
+      <stackCount>1</stackCount>
+      <stuff>Hyperweave</stuff>
+    </li>
+  </wornApparel>
+  <lastApparelWearoutTick>1706250</lastApparelWearoutTick>
+</apparel>
+<story>
+  <childhood>TribeChild1788331878</childhood>
+  <adulthood>Weaver-1485334390</adulthood>
+  <skinWhiteness>0.8418421</skinWhiteness>
+  <hairColor>RGBA(0.458, 0.558, 0.479, 1.000)</hairColor>
+  <crownType>Average</crownType>
+  <headGraphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</headGraphicPath>
+  <hairDef>BraidedKnot</hairDef>
+  <traits>
+    <allTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+      <li>
+        <def>PsychicSensitivity</def>
+        <degree>1</degree>
+      </li>
+      <li>
+        <def>Prosthophobe</def>
+      </li>
+    </allTraits>
+  </traits>
+</story>
+<equipment>
+  <primary>
+    <def>Gun_AssaultRifle</def>
+    <id>Gun_AssaultRifle269110</id>
+    <pos>(95, 0, 134)</pos>
+    <health>100000</health>
+    <stackCount>1</stackCount>
+    <verbTracker>
+      <verbs>
+        <li Class=\"Verb_Shoot\">
+          <loadID>7700552</loadID>
+        </li>
+      </verbs>
+    </verbTracker>
+    <quality>Legendary</quality>
+    <taleRef IsNull=\"True\" />
+  </primary>
+</equipment>
+<drafter>
+  <drafter>
+    <autoUndrafter>
+      <lastNonWaitingTick>1707900</lastNonWaitingTick>
+    </autoUndrafter>
+  </drafter>
+</drafter>
+<ageTracker>
+  <ageBiologicalTicks>124498986</ageBiologicalTicks>
+  <birthAbsTicks>-119176030</birthAbsTicks>
+</ageTracker>
+<healthTracker>
+  <hediffSet>
+    <hediffs />
+  </hediffSet>
+  <surgeryBills>
+    <bills />
+  </surgeryBills>
+  <immunity>
+    <imList />
+  </immunity>
+</healthTracker>
+<records>
+  <records>
+    <vals>
+      <li>6</li>
+      <li>2</li>
+      <li>4</li>
+      <li>0</li>
+      <li>4</li>
+      <li>2</li>
+      <li>2</li>
+      <li>0</li>
+      <li>135</li>
+      <li>2</li>
+      <li>408</li>
+      <li>34</li>
+      <li>1</li>
+      <li>0</li>
+      <li>35</li>
+      <li>0</li>
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>338</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>351</li>
+      <li>28</li>
+      <li>19</li>
+      <li>2</li>
+      <li>365</li>
+      <li>406.9151</li>
+      <li>0</li>
+      <li>42.15001</li>
+      <li>0</li>
+      <li>0</li>
+      <li>0</li>
+      <li>3</li>
+      <li>0</li>
+      <li>1</li>
+      <li>0</li>
+      <li>1708000</li>
+      <li>0</li>
+      <li>465840</li>
+      <li>27520</li>
+      <li>0</li>
+      <li>69840</li>
+      <li>140000</li>
+      <li>1070560</li>
+      <li>10800</li>
+      <li>0</li>
+      <li>480</li>
+      <li>313600</li>
+      <li>0</li>
+      <li>12080</li>
+      <li>0</li>
+      <li>8800</li>
+      <li>41440</li>
+      <li>3040</li>
+      <li>160</li>
+      <li>78240</li>
+      <li>0</li>
+      <li>1280</li>
+      <li>6720</li>
+    </vals>
+  </records>
+</records>
+<inventory>
+  <container>
+    <innerList>
+      <li Class=\"ThingWithComps\">
+        <def>MealSurvivalPack</def>
+        <id>MealSurvivalPack505192</id>
+        <health>993</health>
+        <stackCount>1</stackCount>
+        <ingredients />
+      </li>
+    </innerList>
+  </container>
+</inventory>
+<filth>
+  <carriedFilth>
+    <li>
+      <def>FilthDirt</def>
+      <id>FilthDirt550295</id>
+      <thickness>2</thickness>
+    </li>
+  </carriedFilth>
+</filth>
+<needs>
+  <needs>
+    <li Class=\"Need_Mood\">
+      <def>Mood</def>
+      <curLevel>0.9471998</curLevel>
+      <thoughts>
+        <memories>
+          <memories>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>0.93</moodPowerFactor>
+              <age>26100</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>117981.4</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>8400</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>152475.8</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>2850</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>139767.2</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>49200</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>121613</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>54000</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>83491.07</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1193700</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1090500</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>1084350</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocialCumulative\">
+              <def>Chitchat</def>
+              <moodPowerFactor>0.875</moodPowerFactor>
+              <age>57300</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>61713.52</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>981150</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>966900</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>905700</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>898950</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>896400</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>846000</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>801150</age>
+              <otherPawnID>707</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>783600</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>775950</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>773550</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>747900</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>747000</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>735000</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>679950</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>661800</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>660450</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>548250</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>540900</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>489300</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>436950</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>419550</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>414750</age>
+              <otherPawnID>147269</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>402000</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>377700</age>
+              <otherPawnID>790</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Slighted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>364050</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-13753.96</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>197550</age>
+              <otherPawnID>250805</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>PawnWithGoodOpinionDied</def>
+              <age>87150</age>
+              <subject>Trobo</subject>
+            </li>
+            <li>
+              <def>KilledHumanlikeBloodlust</def>
+              <age>86250</age>
+            </li>
+            <li>
+              <def>WitnessedDeathBloodlust</def>
+              <age>85200</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>84150</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>InsultedMood</def>
+              <age>84150</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>HarmedMe</def>
+              <age>83850</age>
+              <subject>Armadillo</subject>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-15</opinionOffset>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>HadCatharticFight</def>
+              <age>83700</age>
+              <subject>Armadillo</subject>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>38</opinionOffset>
+            </li>
+            <li>
+              <def>PawnWithGoodOpinionDied</def>
+              <age>49350</age>
+              <subject>Mosquito</subject>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>DeepTalk</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>42900</age>
+              <otherPawnID>812</otherPawnID>
+              <opinionOffset>41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>AteFineMeal</def>
+              <age>18150</age>
+            </li>
+            <li Class=\"Thought_MemorySocial\">
+              <def>Insulted</def>
+              <moodPowerFactor>2750.792</moodPowerFactor>
+              <age>9600</age>
+              <otherPawnID>786</otherPawnID>
+              <opinionOffset>-41261.89</opinionOffset>
+            </li>
+            <li>
+              <def>InsultedMood</def>
+              <age>9600</age>
+            </li>
+          </memories>
+        </memories>
+      </thoughts>
+      <recentMemory>
+        <lastLightTick>1707874</lastLightTick>
+        <lastOutdoorTick>1699174</lastOutdoorTick>
+      </recentMemory>
+    </li>
+    <li Class=\"Need_Food\">
+      <def>Food</def>
+      <curLevel>0.9559999</curLevel>
+      <ticksToNextStarveDamage>2250</ticksToNextStarveDamage>
+      <lastNonStarvingTick>1707874</lastNonStarvingTick>
+    </li>
+    <li Class=\"Need_Rest\">
+      <def>Rest</def>
+      <curLevel>0.9738749</curLevel>
+    </li>
+    <li Class=\"Need_Joy\">
+      <def>Joy</def>
+      <curLevel>0.9879999</curLevel>
+      <tolerances>
+        <vals>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0.1369174</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+        </vals>
+      </tolerances>
+    </li>
+    <li Class=\"Need_Beauty\">
+      <def>Beauty</def>
+      <curLevel>0.9471998</curLevel>
+    </li>
+    <li Class=\"Need_Comfort\">
+      <def>Comfort</def>
+      <curLevel>0.9736002</curLevel>
+    </li>
+    <li Class=\"Need_Space\">
+      <def>Space</def>
+      <curLevel>0.507942</curLevel>
+    </li>
+  </needs>
+</needs>
+<guest>
+  <hostFaction>null</hostFaction>
+  <getsFood>True</getsFood>
+</guest>
+<social>
+  <directRelations />
+</social>
+<ownership>
+  <ownedBed>Thing_Bed120080</ownedBed>
+  <assignedGrave>null</assignedGrave>
+</ownership>
+<interactions>
+  <lastInteractionTime>1706704</lastInteractionTime>
+</interactions>
+<skills>
+  <skills>
+    <li>
+      <def>Shooting</def>
+      <level>99999</level>
+      <xpSinceLastLevel>11176.76</xpSinceLastLevel>
+      <passion>Minor</passion>
+    </li>
+    <li>
+      <def>Melee</def>
+      <level>99999</level>
+      <xpSinceLastLevel>2917.317</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Social</def>
+      <level>99999</level>
+      <xpSinceLastLevel>1751.28</xpSinceLastLevel>
+      <xpSinceMidnight>9.989999</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Animals</def>
+      <level>99999</level>
+      <xpSinceLastLevel>518.138</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Medicine</def>
+      <level>19</level>
+      <xpSinceLastLevel>19198.46</xpSinceLastLevel>
+      <xpSinceMidnight>-1454</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Cooking</def>
+      <level>19</level>
+      <xpSinceLastLevel>18991.46</xpSinceLastLevel>
+      <passion>Minor</passion>
+      <xpSinceMidnight>-1384</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Construction</def>
+      <level>99999</level>
+      <xpSinceLastLevel>1810.719</xpSinceLastLevel>
+      <xpSinceMidnight>0.091575</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Growing</def>
+      <level>99999</level>
+      <xpSinceLastLevel>2305.228</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Mining</def>
+      <level>99999</level>
+      <xpSinceLastLevel>3673.613</xpSinceLastLevel>
+    </li>
+    <li>
+      <def>Artistic</def>
+      <level>19</level>
+      <xpSinceLastLevel>18620.6</xpSinceLastLevel>
+      <xpSinceMidnight>-1290</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Crafting</def>
+      <level>20</level>
+      <xpSinceLastLevel>88.3199</xpSinceLastLevel>
+      <passion>Minor</passion>
+      <xpSinceMidnight>-1720</xpSinceMidnight>
+    </li>
+    <li>
+      <def>Research</def>
+      <level>99999</level>
+      <xpSinceLastLevel>267.4542</xpSinceLastLevel>
+    </li>
+  </skills>
+</skills>
+<workSettings>
+  <priorities>
+    <vals>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+    </vals>
+  </priorities>
+</workSettings>
+<trader IsNull=\"True\" />
+<outfits>
+  <curOutfit>Outfit_Anything1</curOutfit>
+  <overrideHandler>
+    <forcedAps />
+  </overrideHandler>
+</outfits>
+<timetable>
+  <times>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Anything</li>
+    <li>Sleep</li>
+    <li>Sleep</li>
+  </times>
+</timetable>
+<playerSettings>
+  <medCare>Best</medCare>
+  <areaAllowed>null</areaAllowed>
+  <master>null</master>
+</playerSettings>
+<training IsNull=\"True\" />

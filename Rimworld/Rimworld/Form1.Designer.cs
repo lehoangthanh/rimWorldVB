@@ -42,6 +42,8 @@
             this.reload = new System.Windows.Forms.Button();
             this.btn_Stockpie = new System.Windows.Forms.Button();
             this.btn_People = new System.Windows.Forms.Button();
+            this.kill_the_enemy = new System.Windows.Forms.Button();
+            this.btn_reset_heal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListPeople)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,9 +182,32 @@
             this.btn_People.UseVisualStyleBackColor = true;
             this.btn_People.Click += new System.EventHandler(this.btn_People_Click);
             // 
+            // kill_the_enemy
+            // 
+            this.kill_the_enemy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.kill_the_enemy.Location = new System.Drawing.Point(342, 109);
+            this.kill_the_enemy.Name = "kill_the_enemy";
+            this.kill_the_enemy.Size = new System.Drawing.Size(120, 24);
+            this.kill_the_enemy.TabIndex = 10;
+            this.kill_the_enemy.Text = "Kill The Enemy";
+            this.kill_the_enemy.UseVisualStyleBackColor = true;
+            this.kill_the_enemy.Click += new System.EventHandler(this.btn_kill_the_enemy);
+            // 
+            // btn_reset_heal
+            // 
+            this.btn_reset_heal.Location = new System.Drawing.Point(253, 109);
+            this.btn_reset_heal.Name = "btn_reset_heal";
+            this.btn_reset_heal.Size = new System.Drawing.Size(74, 24);
+            this.btn_reset_heal.TabIndex = 11;
+            this.btn_reset_heal.Text = "Reset Heal";
+            this.btn_reset_heal.UseVisualStyleBackColor = true;
+            this.btn_reset_heal.Click += new System.EventHandler(this.Btn_resetHealthPeoples);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(964, 535);
+            this.Controls.Add(this.btn_reset_heal);
+            this.Controls.Add(this.kill_the_enemy);
             this.Controls.Add(this.dgv_ListPeople);
             this.Controls.Add(this.btn_People);
             this.Controls.Add(this.lbl_People);
@@ -217,6 +242,8 @@
         private System.Windows.Forms.Button reload;
         private System.Windows.Forms.Button btn_Stockpie;
         private System.Windows.Forms.Button btn_People;
+        private System.Windows.Forms.Button kill_the_enemy;
+        private System.Windows.Forms.Button btn_reset_heal;
     }
 }
 

@@ -44,7 +44,7 @@ namespace Rimworld.Models
             XmlElement root = xmlDoc.DocumentElement;
             XmlNodeList nodes = root.SelectNodes("//savegame/game");
 
-            XmlNodeList thingsNode = nodes[0].SelectNodes("maps/li/zoneManager/allZones/li[@Class='Zone_Stockpile']");
+            XmlNodeList thingsNode = nodes[0].SelectNodes("map/zoneManager/allZones/li[@Class='Zone_Stockpile']");
            
             foreach (XmlNode thingNode in thingsNode)
             {                
@@ -81,10 +81,10 @@ namespace Rimworld.Models
 
                 
                 string[] colors = stockPie.color.Split(',');
-                int R = Int32.Parse( (float.Parse(colors[0]) * 100).ToString());
-                int G = Int32.Parse( (float.Parse(colors[1]) * 100).ToString());
-                int B = Int32.Parse( (float.Parse(colors[2]) * 100).ToString());
-                int A = Int32.Parse( Math.Round(float.Parse(colors[3]) * 10).ToString());
+                int R = Int16.Parse( (float.Parse(colors[0])).ToString())/10;
+                int G = Int16.Parse((float.Parse(colors[1])).ToString()) / 10;
+                int B = Int16.Parse((float.Parse(colors[2])).ToString()) / 10;
+                int A = Int16.Parse((float.Parse(colors[3])).ToString()) / 10;
                 Color _color = Color.FromArgb(R, G, B);
                 row.DefaultCellStyle.BackColor = _color;
 

@@ -87,15 +87,25 @@ namespace Rimworld
 
         private void button_upSkill(object sender, EventArgs e)
         {
-            Common.showMessage(lbl_result_process, "Up Research Đang xử lý...");
-           
-            bool result = Common.upResearch();
-            if (result)
-            {
-                Common.showMessage(lbl_result_process, "Up Research Thành Công...",2);
-            }
+            Common.showMessage(lbl_result_process, "Up Skills Đang xử lý...");
+            People.upSkill(dgv_ListPeople);
+            Common.showMessage(lbl_result_process, "Up Skills Thành Công...", 4);
         }
-        
+
+        private void btn_kill_the_enemy(object sender, EventArgs e)
+        {
+            Common.showMessage(lbl_result_process, "Đang xử lý...");
+            People.killEnemy(dgv_ListPeople);
+            Common.showMessage(lbl_result_process, "Thành Công...", 2);
+        }
+
+        private void Btn_resetHealthPeoples(object sender, EventArgs e)
+        {
+            Common.showMessage(lbl_result_process, "Đang xử lý...");
+            People.resetHealth(dgv_ListPeople);
+            Common.showMessage(lbl_result_process, "Thành Công...", 2);
+        }
+
         private void listView_People_DrawColumnHeader(object sender,
                                             DrawListViewColumnHeaderEventArgs e)
         {
@@ -117,6 +127,6 @@ namespace Rimworld
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
+        }       
     }
 }
